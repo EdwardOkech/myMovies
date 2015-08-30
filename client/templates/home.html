@@ -1,0 +1,11 @@
+<!-- template to list all my movies -->
+<template name="home">
+{{#markdown}}
+My Movies library
+A directory of my personal movies collection.
+{{/markdown}}
+{{#each moviesList}}
+    <li>{{> movieList}}</li>
+{{/each}}
+ <button class="lazyload">Load more</button>
+</template>
