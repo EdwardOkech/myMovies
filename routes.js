@@ -86,6 +86,11 @@ Router.map(function(){
         template: 'addCategory'
 
     });
+    this.route('EditMovie', {
+        path: '/editMovie',
+        template: 'editMovie'
+
+    });
 
 });
 

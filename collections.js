@@ -1,6 +1,18 @@
 /**
  * Created by princek on 8/30/15.
  */
+
+if(Meteor.isServer){
+    Movies.allow({
+        insert:function(userId, doc){
+            return userId && doc.owner === userId;
+        },
+        update:function(userId, doc, fields, modifier){
+            return Meteor.user();
+        },
+        fetch: ['owner']
+    })
+}
 Categories = new Mongo.Collection('categories');
 
 //make a default name for a list in the for of 'Category A'

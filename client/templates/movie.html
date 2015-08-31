@@ -11,4 +11,7 @@
       {{text}}
         {{/markdown}}
     </div>
+    {{#if currentUser}}
+    <a href="/editMovie" class="editMovie">Edit Movie</a>
+    {{/if}}
 </template>

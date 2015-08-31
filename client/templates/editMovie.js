@@ -14,7 +14,8 @@ Template.editMovie.events({
                  title:        form.title.value,
                  description:  form.description.value,
                  release_year: form.release_year.value,
-                 star:         from.star.value
+                 star:         from.star.value,
+                 owner:        user._id
 
             }}, function(error){
                   if(error){
