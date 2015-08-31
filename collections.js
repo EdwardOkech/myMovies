@@ -25,5 +25,10 @@ if(Meteor.isServer){
             return Meteor.user();
         },
         fetch: ['owner']
+    }),
+    Movies.deny({
+        update: function(userId, docs, fields, modifier){
+            return _.contains(fields, 'owner') || _.contains(fields, '_id');
+        }
     })
 };
