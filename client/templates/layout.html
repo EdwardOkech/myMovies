@@ -4,11 +4,18 @@
             <h1>Movie Directory</h1>
             <ul>
                 <li>
-                    <a href="/">My Movies</a>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/categories">Categories</a>
                 </li>
                 <li>
                     <a href="/news">News</a>
                 </li>
+                {{#if currentUser}}
+                   {{> logedin}}
+                {{/if}}
+
             </ul>
         </div>
     </header>
@@ -22,5 +29,10 @@
     <div class="jumbotron">
         <h3>Nothing Here!!</h3>
         <h4>You hit a page which doesn't exist!!</h4>
+    </div>
+</template>
+<template name="loading">
+    <div class="center">
+        <img src="/img/loader.gif">
     </div>
 </template>

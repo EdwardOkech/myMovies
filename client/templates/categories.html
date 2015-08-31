@@ -1,0 +1,11 @@
+<template name="categories">
+{{#markdown}}
+## choose your favourite category
+{{/markdown}}
+{{#if currentUser}}
+    <a href="/addCategory" class="addCategory">Add Category</a>
+{{/if}}
+{{#each categoriesList}}
+    {{> categoryList}}
+{{/each}}
+</template>

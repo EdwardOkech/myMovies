@@ -1,0 +1,14 @@
+<template name="movie">
+    <h2>{{title}}</h2>
+    <h3>{{description}}</h3>
+    <h4>{{release_year}}</h4>
+    <h5>{{star}}</h5>
+    <small>
+        Ratings: {{rating}}
+    </small>
+    <div class="movieContent">
+        {{#markdown}}
+      {{text}}
+        {{/markdown}}
+    </div>
+</template>

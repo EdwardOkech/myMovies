@@ -4,6 +4,9 @@
 My Movies library
 A directory of my personal movies collection.
 {{/markdown}}
+{{#if currentUser}}
+    <a href="/addMovie" class="addMovie">Add Movie</a>
+{{/if}}
 {{#each moviesList}}
     <li>{{> movieList}}</li>
 {{/each}}
