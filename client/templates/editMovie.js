@@ -1,6 +1,13 @@
 /**
  * Created by princek on 8/31/15.
  */
+
+Session.setDefault('saveButton', 'Save Movie');
+Template.editMovie.helpers({
+    saveButtonText: function(){
+        return Session.get('saveButton');
+    }
+});
 Template.editMovie.events({
     'submit form': function(event, template){
         event.preventDefault();
