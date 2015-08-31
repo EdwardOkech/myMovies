@@ -30,3 +30,7 @@ Meteor.publish('lazyload-movies', function(limit){
         }
     });
 });
+
+Meteor.publish('single-movie', function(_id){
+    return Movies.find({_id:_id});
+});
