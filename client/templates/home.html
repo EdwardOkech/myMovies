@@ -5,10 +5,10 @@ My Movies library
 A directory of my personal movies collection.
 {{/markdown}}
 {{#if currentUser}}
-    <a href="/addMovie" class="addMovie">Add Movie</a>
+    <p><a href="/addMovie" class="addMovie"><button class="btn btn-default">Add Movie</button> </a></p>
 {{/if}}
 {{#each moviesList}}
-    <li>{{> movieList}}</li>
+    {{> movieList}}
 {{/each}}
  <button class="lazyload">Load more</button>
 </template>

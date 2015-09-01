@@ -1,10 +1,38 @@
 <template name="register">
-    <form>
-        <input type="email" name="registerEmail" placeholder="email">
-        <input type="username" name="registerUsername" placeholder="username">
-        <input type="password" name="registerPassword" placeholder="password">
-        <input type="submit" value="Sign-up">
-    </form>
+
+    <div class="dialog">
+    <div class="panel panel-default">
+        <p class="panel-heading no-collapse">Sign Up</p>
+        <div class="panel-body">
+            <form>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="registerEmail" placeholder="email"
+                            class="form-control span12">
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="username" name="registerUsername" placeholder="username"
+                            class="form-control span12">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="registerPassword" placeholder="password"
+                            class="form-control span12">
+                </div>
+                <div class="form-group">
+                     <input type="submit" value="Sign-up" class="btn btn-primary pull-right">
+
+                    <label class="remember-me"><input type="checkbox"> I agree with the <a href="terms-and-conditions.html">Terms and Conditions</a></label>
+                </div>
+                    <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+    <p><a href="privacy-policy.html" style="font-size: .75em; margin-top: .25em;">Privacy Policy</a></p>
+</div>
+
 
 
 </template>
